@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LogInActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/fh"
+        app:title="注册" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tb_login"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:hint="用户名" />
+
+        <EditText
+            android:id="@+id/ed_age"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:maxEms="2"
+            android:inputType="number"
+            android:hint="年龄" />
+
+        <EditText
+            android:id="@+id/ed_desc"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_pwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="简介" />
+
+        <RadioGroup
+            android:id="@+id/Group"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/ed_desc"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/rb_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="男" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="女" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/ed_pwd"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Group"
+            android:layout_centerHorizontal="true"
+            android:inputType="numberPassword"
+            android:layout_marginTop="10dp"
+            android:hint="密码" />
+
+        <EditText
+            android:id="@+id/ed_pwd2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_pwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="numberPassword"
+            android:hint="再输入一次" />
+
+        <EditText
+            android:id="@+id/ed_Email"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_pwd2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="邮箱" />
+
+        <TextView
+            android:id="@+id/tv_varn"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_Email"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:text="@string/succes" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_varn"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:text="注册" />
+
+    </LinearLayout>
+
+</LinearLayout>

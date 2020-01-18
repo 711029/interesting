@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.FeedBackActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/fh"
+        app:title="反馈" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/ed_feedtext"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="6"
+            android:background="@color/hui"
+            android:hint="输入你想反馈的问题"
+            android:lineHeight="30dp"/>
+        <EditText
+            android:id="@+id/ed_feednum"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入你的QQ号码"
+            android:background="@color/hui"/>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_marginTop="30dp"
+            android:text="提交"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

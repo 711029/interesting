@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="内容"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_url"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_content" />
+
+    <TextView
+        android:id="@+id/tv_updatatime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_url"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@id/tv_content"
+        android:layout_marginRight="10dp"
+        android:text="更新时间"
+        android:textSize="10dp" />
+</RelativeLayout>

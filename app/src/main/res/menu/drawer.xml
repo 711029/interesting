@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <!--不要选中状态-->
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/my_zl"
+            android:icon="@drawable/zl"
+            android:title="我的资料" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/sc"
+            android:title="我的收藏" />
+        <item
+            android:id="@+id/updatapwd"
+            android:icon="@drawable/xg"
+            android:title="修改密码" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/fk"
+            android:title="问题反馈" />
+        <item
+            android:id="@+id/nav_quit"
+            android:icon="@drawable/tc"
+            android:title="退出登录" />
+    </group>
+</menu>

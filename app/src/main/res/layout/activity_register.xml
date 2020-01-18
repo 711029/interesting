@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="登录" />
+
+    <ImageView
+        android:id="@+id/img_main"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/toolbar_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/icon" />
+
+    <EditText
+        android:hint="账号："
+        android:id="@+id/ed_name"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:hint="密码："
+        android:inputType="numberPassword"
+        android:id="@+id/ed_pwd"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:id="@+id/keep_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_pwd"
+        android:layout_marginTop="4dp"
+        android:text="记住密码"
+        android:layout_alignRight="@id/ed_pwd" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="#ff7635"
+        android:layout_below="@id/keep_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:background="#ff7635"
+        android:layout_marginTop="15dp"
+        android:text="注册" />
+
+    <TextView
+        android:id="@+id/tv_forget"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_alignRight="@id/btn_login"
+        android:text="忘记密码？" />
+
+
+</RelativeLayout>

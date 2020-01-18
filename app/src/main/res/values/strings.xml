@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">有点意思</string>
+    <string name="icon_name" translatable="false">有点意思</string>
+    <string name="succes" translatable="false">注册成功后前往邮箱验证否者无法登录!</string>
+    <string-array name="menu">
+        <item>我的资料</item>
+        <item>我的收藏</item>
+        <item>修改密码</item>
+        <item>退出登录</item>
+        <item>问题反馈</item>
+    </string-array>
+</resources>
