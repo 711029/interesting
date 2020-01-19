@@ -1,14 +1,12 @@
 # 有点意思
 - Sort of means an app that includes jokes and news
 
-首页及侧拉菜单模块功能
+主要模块功能
+- 闪屏页俩秒后进入登录界面
 - bomb数据库实现登录注册 https://www.bmob.cn/
 - ToolBar的使用
 - 使用NavigationView + DrawerLayout实现侧拉菜单
 - 使用webview加载网页，并显示加载进度条
-
-模块功能
-- 闪屏页
 - viewpager嵌套使用fragment
 - tablayout指示器
 - Rxvolley基于Volley的网络请求库 http://rxvolley.mydoc.io/
