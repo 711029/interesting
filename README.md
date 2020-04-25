@@ -30,6 +30,3 @@
 
 问题反馈功能
 - 将问题提交至bmob数据库
-# 项目预览地址 https://ajbk.baklib.com/b52e/6bdb
-
-# 个人博客https://ajbk.baklib.com/
